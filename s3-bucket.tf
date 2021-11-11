@@ -1,6 +1,6 @@
-module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
-
+module "s3-bucket" {
+  source  = "app.terraform.io/yantra-cloud/s3-bucket/aws"
+  version = "2.11.1"
 
   bucket_prefix	= "${var.prefix}"
   acl    = "private"
